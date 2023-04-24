@@ -112,9 +112,5 @@ int main(){
     }
     node* mergedLL = merge(first , second) ;
     cout<<"Merged Sorted Linked List: " ; 
-    display(mergedLL) ; 
-
-
-
-    
+    display(mergedLL) ;    
 }
