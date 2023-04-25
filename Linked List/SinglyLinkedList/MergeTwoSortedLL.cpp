@@ -111,6 +111,7 @@ int main(){
         lastInsert(second, a) ; 
     }
     node* mergedLL = merge(first , second) ;
-    cout<<"Merged Sorted Linked List: " ; 
+    cout<<"Merged Sorted Linked List: " ;
+     
     display(mergedLL) ;    
 }
