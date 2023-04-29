@@ -1,7 +1,7 @@
-#          **STACK**
+#          **STACK THEORY**
 
 
-stack use-
+stack uses-
 
 ### LIFO- last in first out technique
 
