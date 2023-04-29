@@ -74,4 +74,50 @@ of the array.We'll take input from the user and define the max size in the runti
  * Top pointer:After making the array , as no element will be there, so we'll make the top pointer to point to -1.
 
 
+## **Stack Implementation Using Linked List:**
+
+There's a difference while implementing using LL. 
+
+* In array , Push and pop required less time while it is done in the right hand side of the array(it takes O(1) time) .
+
+
+
+| 1 | 2 | 3 | 5 |...|
+|---|---|---|---|---|
+                O(1)
+right most side will take O(1) time for array.
+
+
+*But in Linked List , to push and pop in the right hand side will take O(n) time . Because every time you have to iterate to the last element . 
+So push and pop in the start of the LL is time efficient.
+
+| 1 | 2 | 3 | 5 |...|
+|---|---|---|---|---|
+                O(n)
+
+so We will add or delete a node in the start of the linked List.
+
+### Operations:
+Maximum size of the stack:In Linked List you can add as many node as you want until the heap is full.
+
+---
+* isEmpty Condition: if the top pointer is NULL , that means no node is created and the stack is empty.
+~~~
+if(top == NULL) {
+    empty;
+}
+~~~
+---
+---
+* isFull condition: If you can not add any new node , that means the heap is full . So this is the isFull condition.
+
+~~~ node *t = new node;
+
+if(t == NULL){
+
+    Full;
+}
+~~~
+---
+
 
