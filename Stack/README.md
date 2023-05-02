@@ -110,14 +110,76 @@ if(top == NULL) {
 ---
 ---
 * isFull condition: If you can not add any new node , that means the heap is full . So this is the isFull condition.
-
-~~~ node *t = new node;
+``` 
+node *t = new node;
 
 if(t == NULL){
 
     Full;
 }
-~~~
+```
 ---
+---
+# **Infix , prefix and postfix operation of stack**
 
+
+---
+| name     | operation                  | expression |
+|:---------|:---------------------------|:-----------|
+|Infix     | operand operator operand   | a + b      |
+|Prefix    | operand operator operand   |   +ab     |
+|Postfix   | operand  operand  operator  |   ab+      |
+---
+<br>
+
+> #**Rules of Prefix , postfix , infix operation:**
+
+01.the expression should be parenthesized whatever the case .Like
+a+b+c* d can also be written as (a+b+c*d)
+
+
+
+
+
+> #**Associativity**
+
+|symbol|precedence|associativity|
+|:-----|:---------|:------------|
+|+,-   |    1     | L-R(left to right) |
+|* , / |    2     | L-R |
+|^(power)|    3   | R-L |
+| -    | 4        | R-L  |
+|()    |5         | L-R  |
+
+> ##**Examples :**
+
+>01. a+b+c*d
+
+prefix: 
+a+b+*cd
+<br>
+=+ab+*cd
+<br>
+= ++ab*cd
+
+postfix:
+=a+b+cd*
+=ab++cd*
+=ab+cd*+
+
+>02. -a + b*logn!
+
+postfix:
+ =-a + b*logn!
+
+ =-a+b*logn!
+
+ =-a + b*n!log
+
+ =a-+b*n!log
+
+ = a- +bn!log*
+
+ = a-bn!log*+
+ 
 
