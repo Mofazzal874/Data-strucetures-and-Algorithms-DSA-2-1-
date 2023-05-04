@@ -1,6 +1,7 @@
 
 # **Generalizing Recursion**
 lets assume _fun1_ is a recursive function 
+
 ```
 void fun1(int n ){
 
