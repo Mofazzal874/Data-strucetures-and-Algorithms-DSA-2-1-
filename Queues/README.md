@@ -44,7 +44,7 @@ insertion-O(1)
 deletion - O(n)
 
 
-### Using drawbacks pointer
+### Using Two pointer
 
 
 
