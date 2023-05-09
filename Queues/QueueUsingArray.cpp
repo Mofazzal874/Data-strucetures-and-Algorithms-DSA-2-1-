@@ -46,7 +46,8 @@ int queue::dequeue(){
     int x = -1; 
     if(isEmpty()) cout<<"Queue is empty\n" ; 
     else {
-        x = array[front++] ;   
+        x = array[front+1] ;
+        front++ ;    
     }
     return x ; 
 }
@@ -65,8 +66,10 @@ int main(){
         int x ; cin>>x ; 
         q.enqueue(x) ; 
     }
-    q.enqueue(10) ;
-    q.display(); 
+    //q.enqueue(10) ;
+    q.display();
+    cout<<q.dequeue()<<endl;
+    cout<<q.dequeue()<<endl; 
     return 0 ; 
     
 }
