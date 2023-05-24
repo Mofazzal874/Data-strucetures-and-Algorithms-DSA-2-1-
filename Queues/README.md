@@ -46,5 +46,17 @@ deletion - O(n)
 
 ### Using Two pointer
 
+### **Drawbacks of Queue using Array**
+*Cannot reused the deleted elements indexes>>>>
+if the front pointer is not pointing to the oth index of the array and if the rear is pointing to the maxSize'th index of the array , then if we try to insert an element , the output will be - queue is Full.(Although there is space in the front side) .. so this is a problem which is solved by using resetting the two pointers to 0.
 
+* Every position can be used only once.....
 
+* A situation like isEmpty() and isFull() is created if you delete all the element in the queue , Then there is full also and empty also condition arrives
+
+### **Solutions:**
+* i.resetting pointers
+
+->at anytime , anyplace , if the queue is becoming empty(front == rear) ,bring the front and rear pointer to -1.This way the space can be reused .
+
+* ii.Circular Queue.
