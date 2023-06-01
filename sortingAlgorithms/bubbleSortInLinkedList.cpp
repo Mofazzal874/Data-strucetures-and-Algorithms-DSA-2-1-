@@ -83,7 +83,8 @@ void swp (int &a , int &b){
     a = a - b ;  
 }
 //method-01
-//swapping the nodes 
+//swapping the nodes
+//this swapping only applicable for adjacent nodes
 node* swpnode(node* &n1 , node* &n2){
     node* temp = n2->next ; 
     n2->next = n1 ; 
