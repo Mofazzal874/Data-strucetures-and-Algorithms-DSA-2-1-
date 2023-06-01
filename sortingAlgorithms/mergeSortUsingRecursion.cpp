@@ -1,7 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std ;
 
+//conquer part
 void mergee(int arr[] , int beg , int mid , int ed){
+
     int n1 = mid - beg + 1;
     int n2 = ed - mid ;
     int left[n1] , right[n2] ;
@@ -37,6 +39,7 @@ void mergee(int arr[] , int beg , int mid , int ed){
     }
 }
 
+//divide part
 void mergeSort(int arr[] , int beg , int ed){
     int mid = (ed + beg) / 2 ;
     if(beg >= ed) return ;
