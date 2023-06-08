@@ -33,7 +33,7 @@ class node{
     }
 } ;
 
-int search(int in[] , int inStart  , int inEnd ,int val){
+int search(int in[], int inStart  , int inEnd ,int val){
 
     for(int i = inStart ; i <= inEnd ; i++){
         if(in[i] == val) 

@@ -17,8 +17,6 @@ class node{
 } ;
 
 
-
-
 void firstInsert(node* &head, int val){
 
     node* n = new node(val)  ; 
@@ -30,6 +28,27 @@ void firstInsert(node* &head, int val){
      
 
 }
+
+void lastInsert(node* &head, int val){
+
+
+
+    if(head == NULL){
+        firstInsert(head,val) ; 
+        return ; 
+    }
+
+    node* n = new node(val) ; 
+    node* temp = head ; 
+   
+    while(temp->next != NULL){
+        temp = temp->next ;
+    }
+    temp->next = n ; 
+    n->prev = temp ; 
+}
+
+
 
   
 void firstDelete(node* &head , int val){
@@ -83,25 +102,6 @@ void  deletion(node* &head , int val){
     }
 }
 
-
-void lastInsert(node* &head, int val){
-
-
-
-    if(head == NULL){
-        firstInsert(head,val) ; 
-        return ; 
-    }
-
-    node* n = new node(val) ; 
-    node* temp = head ; 
-   
-    while(temp->next != NULL){
-        temp = temp->next ;
-    }
-    temp->next = n ; 
-    n->prev = temp ; 
-}
 
 
 void display(node* &head){
