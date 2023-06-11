@@ -93,6 +93,41 @@ node* merge(node* first , node *second){
     return third ; //returning the head of the merged LL
 
 }
+
+
+
+//----------------------------------------Recursive solution----------------------------------
+/*
+        Time Complexity - O(N + M)
+        Space Complexity - O(N + M)
+
+        Where N and M are the number of nodes in both lists respectively.
+*/
+
+node* sortTwoLists(node* first, node* second) {
+    if(!first)
+    {
+        return second;
+    }
+    if(!second)
+    {
+        return first;
+    }
+
+    if((first -> info) < (second ->info))
+    {
+        first -> next = sortTwoLists(first -> next, second);
+        return first;
+    }
+    else
+    {
+        second -> next = sortTwoLists(first, second -> next);
+        return second;
+    }
+}
+
+
+
 int main(){
 
     node* first = NULL  ; 
