@@ -68,8 +68,11 @@ int main(){
     
 }
 
+
+//array: 30 20 15 5 10 12 6 11 40 50
+
 //Terminal using heapInsert1 function :
-//array: 30 20 15 5 10 12 6 11 40 50 
+ 
 // Enter the maximum number of element in a heap: 10
 // 30
 // 30 0 0 0 0 0 0 0 0 0 

@@ -37,7 +37,7 @@ class Queue{
         else {
             if(front == NULL){
                 front = n ; 
-                rear = n ;
+                rear = n;
                 return ; 
                 
             }

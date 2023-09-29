@@ -14,7 +14,8 @@ class queue{
     //operations 
     public:
     queue(){
-        front = rear = -1; 
+        front = rear = -1;
+        array = new int[100] ;  
     }
     queue(int s){
         front = rear = -1 ; 

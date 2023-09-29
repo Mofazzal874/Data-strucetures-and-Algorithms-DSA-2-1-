@@ -18,7 +18,7 @@ void mergee(int arr[] , int beg , int mid , int ed){
     while(idx1 < n1 && idx2 < n2){
         if(left[idx1] <= right[idx2]){
             arr[idx] = left[idx1] ;
-            idx1++ ;
+            idx1++;
         }
         else{
             arr[idx] = right[idx2] ;

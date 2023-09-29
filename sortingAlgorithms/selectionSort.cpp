@@ -21,7 +21,7 @@ void selectionSort(int a[] , int n){
                                     //no need to swapping
             swp(a[i] , a[min_indx]) ; 
             
-        }
+        } 
     }
 }
 int main(){

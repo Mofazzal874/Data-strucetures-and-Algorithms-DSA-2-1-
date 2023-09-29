@@ -1,7 +1,7 @@
 //Using the same space circularly
 //if the front and rear reaches the maxSize, It will circle back to the 0th index of the array.
 //And we will not start from -1 now . We will start from 0th index from now on.
-//we will keep the 0th index empty.we will not use this now.We will use when the rear reaches the end , then we
+//we will keep the 0th index empty.we will not use this now.We will use it when the rear reaches the end , then we
 // will circle back and insert at 0th index and starting to push from there.
 //But keep in mind that you can use rear = front logic now.At least one index will always remain empty. 
 //And that is the previous index of front.

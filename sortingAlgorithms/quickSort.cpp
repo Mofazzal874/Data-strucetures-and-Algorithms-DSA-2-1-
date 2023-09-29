@@ -3,6 +3,7 @@ using namespace std;
 typedef long long ll;
 
 int partition(int a[] ,int low ,int  high){
+ //taking left first element as pivot
     
     int pivot = a[low] ; 
     int i = low , j = high ; 
